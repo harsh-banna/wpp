@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .drag-list {
+          list-style: none;
+          padding: 0;
+        }
+    
+        .drag-item {
+          background-color: #CC56FF;
+          padding: 10px;
+          margin-bottom: 5px;
+          cursor: move;
+        }
+      </style>
+ <body>
+    <button id="myButton">Double click me!</button>
+    <script>
+      const myButton = document.getElementById('myButton');
+      myButton.addEventListener('dblclick', () => {
+        console.log('A double click has been performed!');
+        // Perform desired actions here
+      });
+    </script>
+  </body>
+</html>
